@@ -7,6 +7,7 @@
 </head>
 <body>
 	<header>
+		<img src="images/logo.png" alt="logo">
 		<h1>Non-Profit Organization</h1>
 		<nav>
 			<ul>
@@ -21,46 +22,89 @@
 	</header>
     
     <div class="image-container">
-		<img src="images/banner.jpg" alt="Description of your image">
+		<img src="images/banner.jpg" alt="Non-profit organization background image">
         <div class="image-text">
             <h2>Welcome to our NGO for less privileged</h2>
-           <p>We are commited in improving lives in our society.
+           <p>We are commited in improving lives in our<br> society.
             Help us make a difference in the world
            </p>
-           <button>Donate Now</button>
+           <button type="submit"><a href="#donate">Donate Now</a></button>
+		   
         </div>
         </div>
 	<main>
 		<section id="about">
 			<h2>About Us</h2>
-			<p>We are a non-profit organization dedicated to helping less privileged in our society.
-                Our mission is to provide acess to education, health services, and basic needs to those who need it it the most
+			<p>Lorem ipsum dolor <br>sit amet consectetur adipisicing elit. Deleniti fugiat fugit, quasi temporibus quae natus facere nostrum? <br>Iusto veritatis quod saepe incidunt. Rem quia ut at sapiente id, doloribus ipsam.
             </p>
 		</section>
-        <section id="Our programs">
+        <section id="Our-programs">
             <h2> Our programs</h2>
             <ul>
-                <li><a href="#">Education program</a></li>
-                <li><a href="#">Health program</a></li>
-                <li><a href="#">Food program</a></li>
-                <li><a href="#">Shelter program</a></li>
-            </ul>
+                <li><a href="#">Education program</a><p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.<br>reiciendis alias repellendus.</p></li>
+                <li><a href="#">Health program</a><p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.<br>reiciendis alias repellendus.</p></li>
+                <li><a href="#">Food program</a><p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.<br>reiciendis alias repellendus.</p></li>
+				
         </section>
         <section id="get-involved">
             <h2>Get Involved</h2>
             <ul>
                 <p>If you would like to support our cause there are several ways to get involved</p>
                 <ul>
-                    <li>Donate</li>
-                    <li>Volunteer</li>
+                    <li>Donate you can get involve through donatation this will go a long way for us</li>
+                    <li>Volunteer. You can also voluteer to be a worker for us to help us archieve our course</li>
                     <li>Spread the word</li>
                 </ul>
             </ul>
         </section>
 		<section id="donate">
 			<h2>Donate</h2>
-			<p>Insert information about how and where to donate, and any preferences for donation allocation here.</p>
-		</section>
+			<p>
+Tap on the logo to chose your paymaent method to donate..<br>Thank You!			</p>
+		  
+			<div class="payment-method-selection">
+			  <div class="payment-method">
+				<img src="images/download.png" alt="MTN Mobile Money logo" onclick="showMtnMoneyForm()">
+				<h3>MTN Mobile Money</h3>
+			  </div>
+		  
+			  <div class="payment-method">
+				<img src="images/download (1).png" alt="Orange Money logo" onclick="showOrangeMoneyForm()">
+				<h3>Orange Money</h3>
+			  </div>
+			</div>
+		  
+			<form id="mtn-money-form" style="display: none;">
+			  <h2>Donate using MTN Mobile Money</h2>
+			  <p>
+				Please enter the amount you would like to donate and your MTN Mobile Money phone number.
+			  </p>
+		  
+			  <label for="mtn-money-amount">Donation amount:</label>
+			  <input type="number" id="mtn-money-amount" name="mtn-money-amount" required>
+		  
+			  <label for="mtn-money-phone-number">MTN Mobile Money phone number:</label>
+			  <input type="tel" id="mtn-money-phone-number" name="mtn-money-phone-number" required>
+		  
+			  <input type="submit" value="Donate">
+			</form>
+		  
+			<form id="orange-money-form" style="display: none;">
+			  <h2>Donate using Orange Money</h2>
+			  <p>
+				Please enter the amount you would like to donate and your Orange Money phone number.
+			  </p>
+		  
+			  <label for="orange-money-amount">Donation amount:</label>
+			  <input type="number" id="orange-money-amount" name="orange-money-amount" required>
+		  
+			  <label for="orange-money-phone-number">Orange Money phone number:</label>
+			  <input type="tel" id="orange-money-phone-number" name="orange-money-phone-number" required>
+		  
+			  <input type="submit" value="Donate">
+			</form>
+		  </section>
+		  
 		<section id="volunteer">
 			<h2>Volunteer</h2>
 			<p> sign up to help us make a positive difference within our local community and also archieve goals or cause that
@@ -68,16 +112,33 @@
             </p>
 			<form id="volunteer-form">
 				<label for="name">Name:</label>
-				<input type="text" id="name" name="name">
+				<input type="text" id="name" name="name" required>
 				<label for="email">Email:</label>
-				<input type="email" id="email" name="email">
+				<input type="email" id="email" name="email" required>
 				<label for="phone">Phone:</label>
-				<input type="tel" id="phone" name="phone">
+				<input type="tel" id="phone" name="phone"required>
+				<label for="passwprd">Password:</label>
+				<input type="password" id="password" name="password" required>
 				<input type="submit" value="Sign up">
+			<p>Already have an account<a href="login.html">Login</a></p>
 			</form>
 		</section>
+		<div id="auth-form"></div>
+		<?php if (!isset($_SESSION['isLoggedIn']) || !$_SESSION['isLoggedIn']) { ?>
+			<?php } ?>
+		  
 	</main>
 	<footer>
+		<P1>NGO</P1>
+		<nav>
+			<h4>Questions</h2>
+			<ul>
+				<li><a href="#">questions</a></li>
+				<li><a href="#">questionsw</a></li>
+				<li><a href="#">questions</a></li>
+				<li><a href="#">questions</a></li>
+			</ul>
+		</nav>
 		<p>&copy; 2023 Non-Profit Organization</p>
 	</footer>
 </body>

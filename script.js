@@ -14,3 +14,25 @@ form.addEventListener("submit", function(event) {
 		phoneInput.value = "";
 	}
 });
+function showMtnMoneyForm() {
+	document.getElementById('mtn-money-form').style.display = 'block';
+	document.getElementById('orange-money-form').style.display = 'none';
+  }
+  
+  function showOrangeMoneyForm() {
+	document.getElementById('orange-money-form').style.display = 'block';
+	document.getElementById('mtn-money-form').style.display = 'none';
+  }
+  const authForm = document.getElementById('auth-form');
+
+// Fetch the sign-up/login form content from the server
+fetch('/auth-form').then(response => response.text()).then(html => {
+  authForm.innerHTML = html;
+});
+const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
+if (isLoggedIn) {
+	authForm.style.display = 'none';
+  } else {
+	authForm.style.display = 'block';
+  }
+  
