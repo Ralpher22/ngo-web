@@ -1,12 +1,20 @@
 <?php
-session_start();
 
-if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']) {
-  // User is logged in, redirect to the main page
-  header('Location: index.php');
-  exit;
+if (isset($_POST['email']) && isset($_POST['message'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $suggestion = $_POST['suggestion'];
+
+  
+  echo "Email: " . $email . "<br>";
+  echo "Message: " . $suggestion;
+
+ 
+  mail('rickyralph@gmail.com.com', 'Subject: Contact Form Message', $suggestion, 'From: ' . $email);
+
+  echo "<p>Your message has been sent successfully.</p>";
 } else {
-  // User is not logged in, display the sign-up/login form
-  include_once 'auth-form.php';
+  echo "Please fill out the form.";
 }
+
 ?>

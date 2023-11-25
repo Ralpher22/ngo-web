@@ -1,78 +1,81 @@
+body{
+	scroll-behavior: smooth;
+}
 
-/* Styles for the header */
+
 header {
-	display: flex; /* Make the header a flex container */
-	align-items: center; /* Align the header content vertically */
-	padding: 20px; /* Add some padding to the header */
-	background-color: #f2f2f2; /* Add a light gray background color */
+	display: flex; 
+	align-items: center; 
+	padding: 20px; 
+	background-color: #f2f2f2; 
   }
   
-  /* Style the logo image */
+
   header img {
-	height: 20px; /* Set the height of the logo image */
-	margin-right: 10px; /* Add some margin to the right of the logo image */
+	height: 20px; 
+	margin-right: 10px; 
   }
   
-  /* Style the navigation menu */
+  
   header nav {
-	margin: 0; /* Remove the default margin from the navigation menu */
-	padding: 0; /* Remove the default padding from the navigation menu */
-	list-style: none; /* Remove the default list bullets */
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
 	scroll-behavior: smooth;
   }
   
-  /* Style the navigation links */
+ 
   header nav ul li {
-	display: inline-block; /* Make the navigation links display inline */
-	margin-right: 20px; /* Add some margin between the navigation links */
+	display: inline-block; 
+	margin-right: 20px; 
   }
   
   header nav ul li a {
-	text-decoration: none; /* Remove the default underline from the navigation links */
-	color: #333; /* Set the text color of the navigation links */
-	font-weight: bold; /* Make the text of the navigation links bold */
+	text-decoration: none; 
+	color: #333; 
+	font-weight: bold; 
   }
   
-  /* Style the active navigation link */
+ 
   header nav ul li.active a {
-	color: #007bff; /* Change the text color of the active navigation link */
+	color: #007bff; 
   }
-  /* Style the image container */
+  
 .image-container {
-	position: relative; /* Position the image container relative so that we can position the image text absolutely */
-	width: 100%; /* Set the width of the image container to 100% */
-	height: auto; /* Set the height of the image container to auto so that it fits the height of the image */
-	overflow: hidden; /* Hide any overflow from the image text */
+	position: relative; 
+	width: 100%; 
+	height: auto;
+	overflow: hidden; 
   }
   
-  /* Style the image */
+
   .image-container img {
-	width: 100%; /* Set the width of the image to 100% */
-	height: auto; /* Set the height of the image to auto so that it fits the height of the image container */
-	object-fit: cover; /* Fit the image to cover the entire image container */
+	width: 100%;
+	height: auto;
+	object-fit: cover; 
   }
   
-  /* Style the image text */
+  
   .image-text {
-	position: absolute; /* Position the image text absolutely so that we can position it on top of the image */
-	top: 50%; /* Position the image text vertically in the center of the image */
-	left: 20%; /* Position the image text horizontally in the center of the image */
-	transform: translate(-50%, -50%); /* Translate the image text 50% to the left and 50% up to account for the absolute positioning */
-	background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background to the image text */
-	color: white; /* Set the text color of the image text to white */
-	padding: 20px; /* Add some padding to the image text */
-	text-align: center; /* Center the text of the image text */
+	position: absolute;
+	top: 50%; 
+	left: 20%; 
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.5); 
+	color: white;
+	padding: 20px; 
+	text-align: center; 
   }.image-text h2{
 	color: #007bff;
   }
   
-  /* Style the donate button */
+  
   .image-text button {
-	background-color: #007bff; /* Set the background color of the donate button to blue */
-	color: white; /* Set the text color of the donate button to white */
-	padding: 10px 20px; /* Add some padding to the donate button */
-	border: none; /* Remove the default border from the donate button */
-	cursor: pointer; /* Set the cursor to a pointer when hovering over the donate button */
+	background-color: #007bff; 
+	color: white; 
+	padding: 10px 20px;
+	border: none; 
+	cursor: pointer;
   }
   h2{
 	text-align: center;
@@ -83,29 +86,29 @@ header {
   p{
 	text-align: center;
   }
-  /* Style the section */
+ 
 #Our-programs {
-	padding: 20px; /* Add some padding to the section */
-	background-color: #f2f2f2; /* Add a light gray background color */
+	padding: 20px; 
+	background-color: #f2f2f2; 
   }
   
-  /* Style the section heading */
+  
   #Our-programs h2 {
-	text-align: center; /* Center the section heading */
-	font-size: 24px; /* Set the font size of the section heading to 24px */
-	margin-bottom: 20px; /* Add some margin below the section heading */
+	text-align: center; 
+	font-size: 24px; 
+	margin-bottom: 20px;
   }
   
-  /* Style the list of programs */
+  
   #Our-programs ul {
-	list-style: none; /* Remove the default list bullets */
-	padding: 0; /* Remove the default padding from the list */
+	list-style: none; 
+	padding: 0; 
 	justify-content: space-between;
   }
   
-  /* Style the program list items */
+  
   #Our-programs ul li {
-	margin-bottom: 10px; /* Add some margin below each program list item */
+	margin-bottom: 10px; 
 	display: inline-block;
 	margin-right: 10rem;
 	margin-left: 3rem;
@@ -115,154 +118,175 @@ header {
 	gap: 2rem;
   }
   
-  /* Style the program list item links */
+  
   #Our-programs ul li a {
-	text-decoration: none; /* Remove the default underline from the program list item links */
-	color: #333; /* Set the text color of the program list item links to dark gray */
-	font-weight: bold; /* Make the font of the program list item links bold */
+	text-decoration: none; 
+	color: #333; 
+	font-weight: bold; 
 	
   }
   
-  /* Style the active program list item link */
+  
   #Our-programs ul li a.active {
-	color: #007bff; /* Change the text color of the active program list item link to blue */
+	color: #007bff; 
   }
   #Our-programs :hover{
 	color: #007bff;
 	transition: 0.5s;
   }
-  /* Style the form */
-#volunteer-form {
-	margin: 20px; /* Add some margin to the form */
-	padding: 20px; /* Add some padding to the form */
-	border: 1px solid #ccc; /* Add a light gray border to the form */
-  }
   
-  /* Style the form labels */
-  #volunteer-form label {
-	display: block; /* Make the labels display as blocks */
-	margin-bottom: 5px; /* Add some margin below each label */
-  }
-  
-  /* Style the form inputs */
-  #volunteer-form input {
-	padding: 5px; /* Add some padding to the input fields */
-	border: 1px solid #ccc; /* Add a light gray border to the input fields */
-	width: 100%; /* Make the input fields fill the width of their container */
-  }
-  
-  /* Style the submit button */
-  #volunteer-form input[type="submit"] {
-	padding: 10px; /* Add some padding to the submit button */
-	border: none; /* Remove the default border from the submit button */
-	background-color: #007bff; /* Set the background color of the submit button to blue */
-	color: white; /* Set the text color of the submit button to white */
-	cursor: pointer; /* Set the cursor to a pointer when hovering over the submit button */
-	margin-top: 5px;
-  }
   .payment-method-selection {
 	display: flex;
-	justify-content: center; /* Center the payment methods horizontally */
-	align-items: center; /* Center the payment methods vertically */
-	margin-bottom: 20px; /* Add some margin below the payment method selection */
+	justify-content: center; 
+	align-items: center; 
+	margin-bottom: 20px; 
   }
   
   .payment-method {
-	margin: 10px; /* Add some margin around each payment method */
-	padding: 10px; /* Add some padding to each payment method */
-	border: 1px solid #ccc; /* Add a light gray border to each payment method */
-	text-align: center; /* Center the content of each payment method */
+	margin: 10px; 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: center; 
   }
   
   .payment-method img {
-	width: 50px; /* Set the width of the payment method logos */
-	height: auto; /* Preserve the aspect ratio of the payment method logos */
-	margin-bottom: 10px; /* Add some margin below the payment method logos */
+	width: 50px; 
+	height: auto; 
+	margin-bottom: 10px; 
   }
   
-  /* Style for the mtn donation forms */
 #mtn-money-form {
-	padding: 20px; /* Add some padding to the forms */
-	border: 1px solid #ccc; /* Add a light gray border to the forms */
-	margin-bottom: 20px; /* Add some margin below each form */
+	padding: 20px; 
+	border: 1px solid #ccc; 
+	margin-bottom: 20px;
   }
   
-  /* Style the donation form headings */
+ 
   #mtn-money-form h2 {
-	text-align: center; /* Center the form headings */
-	font-size: 18px; /* Set the font size of the form headings to 18px */
-	margin-bottom: 10px; /* Add some margin below the form headings */
+	text-align: center; 
+	font-size: 18px; 
+	margin-bottom: 10px; 
   }
   
-  /* Style the donation form paragraphs */
+  
   #mtn-money-form p {
-	text-align: justify; /* Justify the form paragraphs */
+	text-align: justify; 
   }
   
-  /* Style the donation form labels */
+ 
   #mtn-money-form label {
-	display: block; /* Make the labels display as blocks */
-	margin-bottom: 5px; /* Add some margin below each label */
+	display: block; 
+	margin-bottom: 5px; 
   }
   
-  /* Style the donation form input fields */
+  
   #mtn-money-form input {
-	padding: 5px; /* Add some padding to the input fields */
-	border: 1px solid #ccc; /* Add a light gray border to the input fields */
-	width: 100%; /* Make the input fields fill the width of their container */
+	padding: 5px; 
+	border: 1px solid #ccc; 
+	width: 100%; 
   }
   
-  /* Style the donation form submit buttons */
+  
   #mtn-money-form input[type="submit"] {
-	padding: 10px; /* Add some padding to the submit buttons */
-	border: none; /* Remove the default border from the submit buttons */
-	background-color: #007bff; /* Set the background color of the submit buttons to blue */
-	color: white; /* Set the text color of the submit buttons to white */
-	cursor: pointer; /* Set the cursor to a pointer when hovering over the submit buttons */
+	padding: 10px; 
+	border: none; 
+	background-color: #007bff;
+	color: white; 
+	cursor: pointer; 
   }
-   /* Style for the orange donation forms */
+   
    #orange-money-form {
-	padding: 20px; /* Add some padding to the forms */
-	border: 1px solid #ccc; /* Add a light gray border to the forms */
-	margin-bottom: 20px; /* Add some margin below each form */
+	padding: 20px;
+	border: 1px solid #ccc; 
+	margin-bottom: 20px; 
+	
   }
   
-  /* Style the donation form headings */
+ 
   #orange-money-form h2 {
-	text-align: center; /* Center the form headings */
-	font-size: 18px; /* Set the font size of the form headings to 18px */
-	margin-bottom: 10px; /* Add some margin below the form headings */
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 10px; 
   }
-  
-  /* Style the donation form paragraphs */
+
   #orange-money-form p {
-	text-align: justify; /* Justify the form paragraphs */
+	text-align: justify; 
   }
   
-  /* Style the donation form labels */
+  
   #orange-money-form label {
-	display: block; /* Make the labels display as blocks */
-	margin-bottom: 5px; /* Add some margin below each label */
+	display: block; 
+	margin-bottom: 5px; 
   }
   
-  /* Style the donation form input fields */
+ 
   #orange-money-form input {
-	padding: 5px; /* Add some padding to the input fields */
-	border: 1px solid #ccc; /* Add a light gray border to the input fields */
-	width: 100%; /* Make the input fields fill the width of their container */
+	padding: 5px; 
+	border: 1px solid #ccc; 
+	width: 100%; 
   }
   
-  /* Style the donation form submit buttons */
+  
   #orange-money-form input[type="submit"] {
-	padding: 10px; /* Add some padding to the submit buttons */
-	border: none; /* Remove the default border from the submit buttons */
-	background-color: #007bff; /* Set the background color of the submit buttons to blue */
-	color: white; /* Set the text color of the submit buttons to white */
-	cursor: pointer; /* Set the cursor to a pointer when hovering over the submit buttons */
+	padding: 10px; 
+	border: none; 
+	background-color: #007bff; 
+	color: white; 
+	cursor: pointer; 
   }
-  footer{
-	background: #f2f2f2;
+  footer {
+	background-color: #222;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
   }
   
+  footer p {
+	margin: 0;
+	font-size: 14px;
+  }
   
+  footer nav {
+	display: inline-block;
+  }
   
+  footer nav h4 {
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+  
+  footer nav ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  footer nav li {
+	margin-bottom: 5px;
+  }
+  
+  footer nav a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  footer nav a:hover {
+	text-decoration: underline;
+	
+  }
+ 
+  #volunteer a{
+	display: inline-block;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-left:120px ;
+  }
+  #volunteer a .bx{
+	font-size: 30px;
+	margin: 0 15px;
+  }
+  
+  .ask{
+	text-align: center;
+	font-size: 20px;
+  }
